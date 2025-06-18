@@ -164,4 +164,5 @@ The kernel is written in Odin with assembly language components for low-level fu
 - **Odin files**: Modify the kernel source in `src/impl/x86_64/kernel/`
 
 ## License
-        **in progress**
+
+in progress
