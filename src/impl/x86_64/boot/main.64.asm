@@ -1,20 +1,17 @@
 global long_mode_start
-extern print_odin
+extern kernel_odin
 
 section .text
 bits 64
 long_mode_start:
-    ; load null into all data segment registers
-    mov ax, 0
-    mov ss, ax
-    mov ds, ax
-    mov es, ax
-    mov fs, ax
-    mov gs, ax
+   ; load null into all data segment registers
+   mov ax, 0
+   mov ss, ax
+   mov ds, ax
+   mov es, ax
+	mov fs, ax
+   mov gs, ax
 	
-	
-	mov dword [0xb8000], 0x2f4b2f4f
-	mov byte [0xb8002], "H"
-	call print_odin
-	mov byte [0xb8002], "X"
-    hlt
+	;calling odin func
+	call kernel_odin
+   hlt
