@@ -77,16 +77,17 @@ A simple x86_64 kernel written in Odin with assembly components.
 ├── src/
 │   └── impl/
 │       └── x86_64/
-│           ├── *.asm          # Assembly source files
+│           ├── boot
+│           │   └── *.asm      # Assembly source files
 │           └── kernel/
-│               └── kernel.odin # Odin kernel source
+│               └── *.odin     # Odin kernel source files
 ├── targets/
 │   └── x86_64/
 │       ├── linker.ld          # Linker script
 │       └── iso/               # ISO directory structure
 ├── build/                     # Build artifacts (generated)
 ├── dist/                      # Distribution files (generated)
-└── CMakeLists.txt            # Build configuration
+└── CMakeLists.txt             # Build configuration
 ```
 
 ## Building and Running
