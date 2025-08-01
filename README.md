@@ -94,7 +94,7 @@ A simple x86_64 kernel written in Odin with assembly components.
 
 ### 1. Clone and Setup
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/lpcsontos/odin_based_os
 cd <project-directory>
 mkdir build
 cd build
